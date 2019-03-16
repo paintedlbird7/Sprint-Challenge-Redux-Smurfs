@@ -1,3 +1,7 @@
+import { combineReducers } from 'redux';
+import { smurfsReducer } from './smurfsReducer';
+// import { singleSmurfReducer } from './singleSmurfReducer';
+
 /*
   Be sure to import in all of the action types from `../actions`
 */
@@ -21,3 +25,9 @@
   There is no need for 'combineReducers' in this project.
   Components can then read your store as, `state` and not `state.fooReducer`.
 */
+
+
+export default combineReducers({
+  smurfsReducer,
+//   singleSmurfReducer
+});
