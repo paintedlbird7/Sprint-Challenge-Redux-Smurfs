@@ -24,6 +24,7 @@ class App extends Component {
       this.props.getSmurfs();
     }
     render() {
+      console.log(this.props.smurfs)
       return (
         <div className="App">
           <header className="App-header">
@@ -36,8 +37,12 @@ class App extends Component {
            <div className="Flex-Container">
           {this.props.gettingSmurfs}
               {/* <Smurfs smurfs={this.props.smurfs} /> */}
+              <ul>
+              {this.props.smurfs.map((smurf,I)=> <li key={ I}>{smurf.name}{smurf.age} {smurf.height}</li>)}
+              </ul>
 
           </div>
+
         </div>
       );
     }

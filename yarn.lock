@@ -1287,6 +1287,11 @@ npm-run-path@^2.0.0:
   dependencies:
     path-key "^2.0.0"
 
+npm-start-command@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/npm-start-command/-/npm-start-command-1.0.0.tgz#dc10a92245e1292bb834c36d705a7029bd0453ad"
+  integrity sha512-pyxys4b2sr5u5xrF4rCSiuA/fGqiY8aKRKv4kD8+dCM5gfinK74Akq4Szmuxo3AlfI9juzxx4zar6UdCtXulMg==
+
 npmlog@^4.0.2:
   version "4.1.2"
   resolved "https://registry.yarnpkg.com/npmlog/-/npmlog-4.1.2.tgz#08a7f2a8bf734604779a9efa4ad5cc717abb954b"
