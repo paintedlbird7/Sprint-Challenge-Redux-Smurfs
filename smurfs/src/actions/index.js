@@ -26,10 +26,10 @@ export const CREATE_SMURF = 'CREATE_SMURF';
 // export const UPDATING_SMURF = 'UPDATING_SMURF';
 // export const SINGLE_SMURF = 'SINGLE_SMURF';
 
-const URL = 'http://localhost:3000/api/smurfs';
+const URL = 'http://localhost:3333/smurfs';
 
 export const getSmurfs = () => {
-  const smurfs = axios.get(`${URL}/get`);
+  const smurfs = axios.get(URL);
   return dispatch => {
     dispatch({ type: GETTING_SMURFS });
     smurfs
@@ -43,7 +43,7 @@ export const getSmurfs = () => {
 };
 
 export const createSmurf = smurf => {
-  const newSmurf = axios.post(`${URL}/create`, smurf);
+  const newSmurf = axios.post({URL}, smurf);
   return dispatch => {
     dispatch({ type: CREATING_SMURF });
     newSmurf

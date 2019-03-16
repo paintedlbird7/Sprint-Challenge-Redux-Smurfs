@@ -31,10 +31,10 @@ class App extends Component {
             <SmurfForm />
           </header>
           
-          {this.props.error ? <h3>Error Fetching Friends</h3> : null}
+          {this.props.error ? <h3>Error Fetching Smurfs</h3> : null}
           
            <div className="Flex-Container">
-          {this.props.gettingFriends}
+          {this.props.gettingSmurfs}
               {/* <Smurfs smurfs={this.props.smurfs} /> */}
 
           </div>
