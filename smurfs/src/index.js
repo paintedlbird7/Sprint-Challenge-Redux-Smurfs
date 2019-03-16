@@ -20,18 +20,9 @@ const store = createStore(
     rootReducer, applyMiddleware(thunk, logger));
 
 
-// ReactDOM.render(
-//   <Provider store={store}>
-//     <App />
-//   </Provider>,
-//   document.getElementById('root')
-// );
-
-
-const rootElement = document.getElementById('root');
 ReactDOM.render(
   <Provider store={store}>
     <App />
   </Provider>,
-  rootElement
+  document.getElementById('root')
 );

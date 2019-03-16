@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import './App.css';
 
-
+// import UpdateSmurfForm from '../components/UpdateSmurfForm';
 import Smurfs from './Smurfs';
 import SmurfForm from './SmurfForm';
-import { getSmurfs } from '../actions';
+import { getSmurfs, 
+    addSmurf 
+} from '../actions';
 import { connect } from 'react-redux';
 
 
@@ -28,13 +30,13 @@ class App extends Component {
             <h1 className="App-Title">{`Smurfs Village`}</h1>
             <SmurfForm />
           </header>
-          {this.props.error ? <h3>Error Fetching Smurfs</h3> : null}
-          <div className="Flex-Container">
-            {this.props.gettingSmurfs ? (
-            <h1 className="App-Title">{`Smurfs-A-Roo`}</h1>
-            ) : (
-              <Smurfs smurfs={this.props.smurfs} />
-            )}
+          
+          {this.props.error ? <h3>Error Fetching Friends</h3> : null}
+          
+           <div className="Flex-Container">
+          {this.props.gettingFriends}
+              {/* <Smurfs smurfs={this.props.smurfs} /> */}
+
           </div>
         </div>
       );

@@ -19,11 +19,12 @@ import axios from 'axios';
 export const ERROR = 'ERROR';
 export const GET_SMURFS = 'GET_SMURFS';
 export const GETTING_SMURFS = 'GETTING_SMURFS';
+
 export const CREATING_SMURF = 'CREATING_SMURF';
 export const CREATE_SMURF = 'CREATE_SMURF';
-export const UPDATE_SMURF = 'UPDATE_SMURFS';
-export const UPDATING_SMURF = 'UPDATING_SMURF';
-export const SINGLE_SMURF = 'SINGLE_SMURF';
+// export const UPDATE_SMURF = 'UPDATE_SMURFS';
+// export const UPDATING_SMURF = 'UPDATING_SMURF';
+// export const SINGLE_SMURF = 'SINGLE_SMURF';
 
 const URL = 'http://localhost:3000/api/smurfs';
 
@@ -62,9 +63,9 @@ export const createSmurf = smurf => {
 //   };
 // };
 
-export const updateSingleSmurf = smurf => {
-  return {
-    type: SINGLE_SMURF,
-    payload: smurf
-  };
-};
+// export const updateSingleSmurf = smurf => {
+//   return {
+//     // type: SINGLE_SMURF,
+//     payload: smurf
+//   };
+// };

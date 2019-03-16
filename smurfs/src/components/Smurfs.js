@@ -1,19 +1,20 @@
+
+
 // import React, { Component } from 'react';
 // import './App.css';
-// import logo from './logo.svg';
-// import SelectedFriend from './SelectedFriend';
+// // import SelectedSmurf from './SelectedSmurf';
 // import { connect } from 'react-redux';
-// import { deleteFriend, updateSingleFriend, toggleShowUpdate } from '../actions';
-// import UpdateFriendForm from './UpdateFriendForm';
+// // import { deleteSmurf, updateSingleSmurf, toggleShowUpdate } from '../actions';
+// // import UpdateSmurfForm from './UpdateSmurfForm';
 
 // class Smurfs extends Component {
-//   handleDeleteFriend = () => {
-//     const { id } = this.props.smurfSelected;
-//     this.props.deleteFriend(id);
+// //   handleDeleteSmurf = () => {
+// //     const { id } = this.props.smurfSelected;
+// //     this.props.deleteSmurf(id);
 //   };
 
 //   handleShowSmurf = smurf => {
-//     this.props.updateSingleFriend(smurf);
+//     this.props.updateSingleSmurf(smurf);
 //   };
 
 //   toggleShowUpdate = () => {
@@ -23,28 +24,28 @@
 //     return (
 //       <div className="Smurf-Container">
 //         <ul className="Smurf-List">
-//           {this.props.friends.map(friend => {
+//           {this.props.smurfs.map(smurf => {
 //             return (
-//               <li onClick={() => this.handleShowFriend(friend)} key={friend.id}>
-//                 {friend.name}
+//               <li onClick={() => this.handleShowSmurf(smurf)} key={smurf.id}>
+//                 {smurf.name}
 //               </li>
 //             );
 //           })}
 //         </ul>
-//         {Object.keys(this.props.friendSelected).length > 0 ? (
-//           <SelectedFriend
-//             handleShowSmurf={this.handleShowSmurf}
-//             toggleShowUpdate={this.toggleShowUpdate}
-//             handleDeleteSmurf={this.handleDeleteSmurf}
-//             selected={this.props.friendSelected}
-//           />
-//         ) : null}
-//         {this.props.showUpdate ? (
-//           <UpdateSmurfForm friend={this.props.friendSelected} />
-//         ) : null}
-//         {this.props.deletingSmurf ? (
-//           <img src={logo} className="App-logo" alt="logo" />
-//         ) : null}
+//         {/* {Object.keys(this.props.smurfSelected).length > 0 ? ( */}
+//         //   <SelectedSmurf
+//         //     handleShowSmurf={this.handleShowSmurf}
+//         //     toggleShowUpdate={this.toggleShowUpdate}
+//         //     handleDeleteSmurf={this.handleDeleteSmurf}
+//         //     selected={this.props.smurfSelected}
+//         //   />
+//         // ) : null}
+//         // {this.props.showUpdate ? (
+//         //   <UpdateSmurfForm smurf={this.props.smurfSelected} />
+//         // ) : null}
+//         // {this.props.deletingSmurf ? (
+//         //   <img src={logo} className="App-logo" alt="logo" />
+//         // ) : null}
 //       </div>
 //     );
 //   }
@@ -52,15 +53,14 @@
 
 // const mapStateToProps = state => {
 //   return {
-//     deleting: state.friendsReducer.deletingSmurf,
-//     error: state.friendsReducer.error,
-//     showUpdate: state.singleFriendReducer.showUpdate,
-//     friendSelected: state.singleSmurfReducer.friendSelected
+//     // deleting: state.smurfsReducer.deletingSmurf,
+//     // error: state.smurfsReducer.error,
+//     // showUpdate: state.singleSmurfReducer.showUpdate,
+//     // smurfSelected: state.singleSmurfReducer.smurfSelected
 //   };
 // };
 
 // export default connect(mapStateToProps, {
-//   deleteSmurf,
-//   updateSingleSmurf,
-//   toggleShowUpdate
+
+  
 // })(Smurfs);
