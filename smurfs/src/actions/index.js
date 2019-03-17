@@ -48,7 +48,8 @@ export const createSmurf = smurf => {
   return dispatch => {
     dispatch({ type: CREATING_SMURF });
     newSmurf
-      .then(({ smurf }) => {
+    
+      .then(({  }) => {
         dispatch({ type: CREATE_SMURF, payload: smurf });
       })
       .catch(err => {
