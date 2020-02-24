@@ -11,13 +11,10 @@ import rootReducer from './reducers';
 
 
 
-// const store = createStore(
-//   () => {}, // this is the most basic reducer. A function that returns and object. Replace it.
-//   applyMiddleware(/* be sure to throw in the proper middlewares here*/)
-// );
 
+//   () => {}, // this is the most basic reducer. A function that returns and object. Replace it.
 const store = createStore(
-    rootReducer, applyMiddleware(thunk, logger));
+    rootReducer, applyMiddleware(thunk, logger)); // be sure to throw in the proper middleware here
 
 
 ReactDOM.render(
